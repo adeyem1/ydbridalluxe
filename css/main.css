@@ -13286,3 +13286,74 @@ body .ui-tooltip {
 .wecon {
   margin-right: 27px;
 }
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0)
+  
+
+}
+
+/* General styling for the select element */
+#eventType {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  appearance: none; /* Removes the default dropdown arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background-image: url('dropdown-arrow.svg'); /* Custom dropdown arrow image */
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focused state */
+#eventType:focus {
+  border-color: #007BFF; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Hover state */
+#eventType:hover {
+  border-color: #888; /* Slightly darker border on hover */
+}
+
+/* Styling for the option elements */
+#eventType option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Disabled option style */
+#eventType option:disabled {
+  color: #888;
+}
+
+/* send button */
+#sendButton{
+  padding: 10px 20px;
+  background-color: #767676;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+#sendButton:hover{
+  background-color: #333;
+}
+

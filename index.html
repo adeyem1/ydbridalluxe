@@ -152,7 +152,7 @@
                         </p>
                         <div class="rr-hero-banner-info d-flex align-items-center ">
                            <div class="rr-hero-banner-btn mr-35 wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-                              <a class="rr-btn" href="#"><span onclick="openModal()">Book A Wedding </span><i class="fa-solid fa-arrow-right"></i></a>
+                              <a class="rr-btn" href="#"><span onclick="openModal()">Book An Event </span><i class="fa-solid fa-arrow-right"></i></a>
                            </div>
                            <div class="rr-hero-banner-play d-flex align-items-center wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
                               <div class="rr-hero-banner-play z-index-2">
@@ -295,7 +295,7 @@
                   <span class="rr-section-subtitle wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">Our
                      Services</span>
                   <h3 class="rr-section-title wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Complete
-                     Wedding Planning</h3>
+                     Event Planning</h3>
                </div>
             </div>
             <div class="row gx-30">
@@ -364,6 +364,42 @@
                      <div class="rr-service-content">
                         <h4 class="rr-service-title">Best Restaurant</h4>
                         <p>Delight your guests with exceptional cuisine from our carefully selected restaurant partners. We offer diverse menu options, from gourmet dishes to local favorites, ensuring a memorable dining experience that perfectly complements your wedding celebration and satisfies every palate.</p>
+                        
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  col-12 wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".8s">
+                  <div class="rr-service-item text-center mb-30">
+                     <div class="rr-service-thumb">
+                        <img src="images/2.png" alt="">
+                     </div>
+                     <div class="rr-service-content">
+                        <h4 class="rr-service-title">Measurements for clothing request</h4>
+                        <p>Our clothing measurement service offers accurate, custom-fit measurements for tailored garments, ensuring a perfect fit for any occasion with professional and precise attention to detail.</p>
+                        
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  col-12 wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".8s">
+                  <div class="rr-service-item text-center mb-30">
+                     <div class="rr-service-thumb">
+                        <img src="images/4.png" alt="">
+                     </div>
+                     <div class="rr-service-content">
+                        <h4 class="rr-service-title">Catering And Menu Planning</h4>
+                        <p>Our catering service provides delicious, customized menus tailored to your event, ensuring high-quality food and impeccable presentation, making your occasion memorable and enjoyable for all.</p>
+                        
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  col-12 wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".8s">
+                  <div class="rr-service-item text-center mb-30">
+                     <div class="rr-service-thumb">
+                        <img src="images/3.png" alt="">
+                     </div>
+                     <div class="rr-service-content">
+                        <h4 class="rr-service-title">Venue</h4>
+                        <p>Our venue selection service helps you find the perfect location for your event, considering style, capacity, and logistics, ensuring a beautiful and suitable setting for your occasion.</p>
                         
                      </div>
                   </div>
@@ -598,7 +634,7 @@
                         <div class="swiper-slide">
                            <div class="rr-testimonial-item d-flex align-items-start">
                               <div class="rr-testimonial-thumb mr-20">
-                                 <img src="images/avada-1.png" alt="">
+                                 <!-- <img src="images/avada-1.png" alt=""> -->
                               </div>
                               <div class="rr-testimonial-content">
                                  <div class="rr-testimonial-star">
@@ -627,7 +663,7 @@
                                  </div>
                                  <p>"Y&D Bridal Luxe exceeded our expectations! Professional, creative, and a pleasure to work with for our corporate event."
                                  </p>
-                                 <h4 class="rr-testimonial-title">Lisa</h4>
+                                 <h4 class="rr-testimonial-title">Tolu</h4>
                                  <!-- <span>Lisa</span> -->
                               </div>
                            </div>
@@ -665,7 +701,7 @@
                </div>
                <div class="col-xl-4 col-lg-3 col-12 wow rrfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
                   <div class="rr-cta-btn mt-20 text-end">
-                     <a class="rr-btn-2" href="#"><span onclick="openModal()">Let us Know <i class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
+                     <a class="rr-btn-2" href="#"><span onclick="openModal()">Let us Know </span><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
                </div>
             </div>
@@ -676,19 +712,28 @@
       <!-- contact -->
       <div id="contactModal" class="modal" style="display: none;">
          <div class="modal-content" id="modalRef">
-             <span class="close" onclick="closeModal()">&times;</span>
-             <h2>Contact Us</h2>
-             <!-- The form sends a POST request to /send-email -->
-             <form id="contactForm" action="/send-email" method="post">
-                 <input type="email" id="email" name="email" placeholder="Your Email" required />
-                 <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                 <input type="checkbox" id="anonymous" name="isAnonymous" />
-                 <label for="anonymous">Send Anonymously</label>
-                 <button type="submit" id="sendButton">Send Message</button>
-             </form>
-             <div id="loadingSpinner" style="display: none;">Loading...</div>
+           <span class="close" onclick="closeModal()">&times;</span>
+           <h2>Contact Us</h2>
+           <!-- The form sends a POST request to /send-email -->
+           <form id="contactForm" action="https://formspree.io/f/mgveeryv" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="text" id="contactInfo" name="contactInfo" placeholder="Your Contact Info" required />
+            <select id="eventType" name="eventType" required>
+              <option value="" disabled selected>Select Event Type</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="party">Party</option>
+              <option value="other">Other</option>
+            </select>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" id="sendButton">Send Message</button>
+          </form>
+          
+           
+           <div id="loadingSpinner" style="display: none;">Loading...</div>
          </div>
-     </div>
+       </div>
+       
        
        
      
@@ -868,43 +913,6 @@
         });
     }
 
-    function handleSendMessage() {
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-    var isAnonymous = document.getElementById("anonymous").checked;
-
-    // Show loading spinner
-    document.getElementById("loadingSpinner").style.display = "block";
-
-    // Send the email via the Node.js server
-    fetch('http://localhost:8000/send-email', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            email: isAnonymous ? 'anonymous@domain.com' : email,
-            message: message
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Hide loading spinner
-        document.getElementById("loadingSpinner").style.display = "none";
-
-        if (data.success) {
-            alert('Email sent successfully!');
-        } else {
-            alert('Error sending email.');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        // Hide loading spinner
-        document.getElementById("loadingSpinner").style.display = "none";
-        alert('Error sending email.');
-    });
-}
 </script>
 
 
